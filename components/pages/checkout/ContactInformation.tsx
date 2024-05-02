@@ -10,7 +10,7 @@ import type { FormSelectOption } from "@/components/pages/checkout/FormSelect"
 import Loader from "@/components/global/Loader"
 import type { CheckoutState } from "@/components/pages/checkout/types"
 import type { Checkout, Response } from "@/pages/api/cart/checkout/types"
-import { AddressElement, LinkAuthenticationElement, useElements } from "@stripe/react-stripe-js"
+import { LinkAuthenticationElement } from "@stripe/react-stripe-js"
 
 
 type Props = {

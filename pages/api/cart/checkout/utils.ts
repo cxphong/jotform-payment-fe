@@ -14,7 +14,7 @@ export async function formatCheckoutResponse(cart: CartInternal): Promise<Checko
         },
         paymentIntentId: cart.checkoutSession.paymentIntentId,
         clientSecret: stripeCheckoutSession.client_secret,
-        shippingMethod: cart.checkoutSession.shippingMethod,
+        // shippingMethod: cart.checkoutSession.shippingMethod,
         shippingAddress: cart.checkoutSession.shippingAddress
     }
 }

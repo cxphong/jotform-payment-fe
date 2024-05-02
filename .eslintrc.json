@@ -3,7 +3,7 @@
         "browser": true,
         "es2021": true
     },
-    "extends": ["plugin:react/recommended", "standard", "prettier"],
+    "extends": ["plugin:react/recommended", "standard", "prettier", "plugin:@next/next/recommended"],
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaFeatures": {
@@ -14,7 +14,8 @@
     },
     "plugins": ["react", "@typescript-eslint", "prettier"],
     "rules": {
-        "quotes": ["error", "double"],
+        "camelcase": "off",
+        // "quotes": ["error", "double"],
         "indent": "off",
         "no-tabs": 0,
         "space-before-function-paren": [
@@ -35,22 +36,27 @@
         ],
         "keyword-spacing": ["error", { "overrides": { "throw": { "after": false } } }],
         "@typescript-eslint/consistent-type-imports": "error",
-        "semi": "off",
-        "@typescript-eslint/semi": ["error", "never"],
-        "comma-dangle": ["error", "never"],
-        "no-unused-vars": "warn",
-        "prettier/prettier": [
-            "error",
-            {
-                "tabWidth": 4,
-                "endOfLine": "auto",
-                "trailingComma": "none",
-                "semi": false,
-                "printWidth": 110
-            }
-        ]
+        // "semi": "off",
+        // "@typescript-eslint/semi": ["error", "never"],
+        // "comma-dangle": ["error", "never"],
+        "no-unused-vars": "warn"
+        // "prettier/prettier": [
+        //     "error",
+        //     {
+        //         // "tabWidth": 4,
+        //         // "endOfLine": "auto",
+        //         // "trailingComma": "none",
+        //         // "semi": false,
+        //         // "printWidth": 110
+        //     }
+        // ]
     },
     "globals": {
         "JSX": true
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
     }
 }
